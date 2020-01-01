@@ -1,9 +1,9 @@
-import { graphql, PageRendererProps, useStaticQuery } from "gatsby"
-import React, { FC } from "react"
-import { Layout } from "../components/layout"
-import { SEO } from "../components/seo"
+import { graphql, PageRendererProps, useStaticQuery } from "gatsby";
+import React, { FC } from "react";
+import { Layout } from "../components/layout";
+import { SEO } from "../components/seo";
 
-type Props = PageRendererProps
+type Props = PageRendererProps;
 
 export const NotFoundPage: FC<Props> = props => {
   const data = useStaticQuery(graphql`
@@ -14,7 +14,7 @@ export const NotFoundPage: FC<Props> = props => {
         }
       }
     }
-  `)
+  `);
 
   return (
     <Layout location={props.location} title={data.site.siteMetadata.title}>
@@ -22,7 +22,7 @@ export const NotFoundPage: FC<Props> = props => {
       <h1>Not Found</h1>
       <p>You just hit a route that doesn&#39;t exist... the sadness.</p>
     </Layout>
-  )
-}
+  );
+};
 
-export default NotFoundPage
+export default NotFoundPage;
