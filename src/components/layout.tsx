@@ -1,5 +1,5 @@
 import { PageRendererProps } from "gatsby"
-import React, { ReactNode } from "react"
+import React, { ReactNode, FC } from "react"
 import styled from "styled-components"
 import { rhythm, styledScale } from "../utils/typography"
 import { FadeLink } from "./link"
@@ -33,7 +33,7 @@ const Content = styled.div`
   padding: ${`${rhythm(1.5)} ${rhythm(3 / 4)}`};
 `
 
-export const Layout = (props: Props) => {
+export const Layout: FC<Props> = props => {
   const { location, title, children } = props
   const rootPath = `/`
 

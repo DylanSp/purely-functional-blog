@@ -1,11 +1,11 @@
 import { graphql, PageRendererProps, useStaticQuery } from "gatsby"
-import React from "react"
+import React, { FC } from "react"
 import { Layout } from "../components/layout"
 import { SEO } from "../components/seo"
 
 type Props = PageRendererProps
 
-export const NotFoundPage = (props: Props) => {
+export const NotFoundPage: FC<Props> = props => {
   const data = useStaticQuery(graphql`
     query {
       site {

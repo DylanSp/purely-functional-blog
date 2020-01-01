@@ -1,5 +1,5 @@
 import { graphql, PageRendererProps, useStaticQuery } from "gatsby"
-import React from "react"
+import React, { FC } from "react"
 import styled from "styled-components"
 import { Bio } from "../components/bio"
 import { Layout } from "../components/layout"
@@ -18,7 +18,7 @@ const Title = styled.h3`
 
 type Props = PageRendererProps
 
-const BlogIndex = (props: Props) => {
+const BlogIndex: FC<Props> = props => {
   const data = useStaticQuery(graphql`
     query {
       site {

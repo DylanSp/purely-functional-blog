@@ -7,7 +7,7 @@
 
 import { graphql, useStaticQuery } from "gatsby"
 import Image from "gatsby-image"
-import React, { ComponentProps, forwardRef, Ref } from "react"
+import React, { ComponentProps, forwardRef, Ref, FC } from "react"
 import styled from "styled-components"
 import { rhythm } from "../utils/typography"
 
@@ -29,7 +29,7 @@ const Avatar = styled(GatsbyImage)`
   min-width: 50px;
 `
 
-export const Bio = () => {
+export const Bio: FC = () => {
   const data = useStaticQuery(graphql`
     query BioQuery {
       avatar: file(absolutePath: { regex: "/profile-pic.jpg/" }) {

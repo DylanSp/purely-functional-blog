@@ -33,6 +33,7 @@ module.exports = {
       files: ["*.tsx"],
       rules: {
         "react/display-name": "off",
+        "react/prop-types": "off", // we use TS for prop type-checking instead
       },
     },
   ],

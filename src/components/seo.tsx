@@ -6,7 +6,7 @@
  */
 
 import { graphql, useStaticQuery } from "gatsby"
-import React from "react"
+import React, { FC } from "react"
 import Helmet from "react-helmet"
 
 interface Meta {
@@ -22,7 +22,7 @@ interface Props {
   description?: string
 }
 
-export const SEO = (props: Props) => {
+export const SEO: FC<Props> = props => {
   const lang = props.lang || "en"
   const meta = props.meta || []
   const keywords = props.keywords || []
