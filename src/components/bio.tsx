@@ -42,15 +42,13 @@ export const Bio = () => {
       site {
         siteMetadata {
           author
-          social {
-            twitter
-          }
         }
       }
     }
   `)
 
   const { author } = data.site.siteMetadata
+  console.log(`Site metadata: ${JSON.stringify(data.site.siteMetadata)}`)
 
   return (
     <Content>
