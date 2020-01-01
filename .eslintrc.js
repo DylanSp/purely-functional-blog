@@ -20,4 +20,20 @@ module.exports = {
       version: "detect",
     },
   },
+  overrides: [
+    // disable rules for JS config files
+    {
+      files: ["*.js"],
+      rules: {
+        "@typescript-eslint/no-var-requires": "off",
+        "@typescript-eslint/explicit-function-return-type": "off",
+      },
+    },
+    {
+      files: ["*.tsx"],
+      rules: {
+        "react/display-name": "off",
+      },
+    },
+  ],
 }

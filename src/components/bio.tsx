@@ -58,8 +58,8 @@ export const Bio = () => {
         imgStyle={{ borderRadius: "50%" }}
       />
       <p>
-        {author}'s thoughts on functional programming, compilers, type systems,
-        and other assorted minutiae.
+        {`${author}'s`} thoughts on functional programming, compilers, type
+        systems, and other assorted minutiae.
       </p>
     </Content>
   )
