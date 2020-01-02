@@ -48,7 +48,6 @@ export const Bio: FC = () => {
   `);
 
   const { author } = data.site.siteMetadata;
-  console.log(`Site metadata: ${JSON.stringify(data.site.siteMetadata)}`);
 
   return (
     <Content>
