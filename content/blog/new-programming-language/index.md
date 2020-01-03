@@ -5,7 +5,7 @@ date: "2020-01-01"
 
 - Intro
 
-  - This is what **I** want, not necessarily what I think will be successful
+  - This is what **I** want, not necessarily what I think will be successful.
 
 - Wants
 
@@ -19,6 +19,9 @@ date: "2020-01-01"
   - Backends
     - Native code (statically linked execs with easy cross-compilation, i.e. Golang?)
     - WASM for in-browser
+  - Error model
+    - Maybe/Either types; but discuss pros/cons of exceptions (see http://joeduffyblog.com/2016/02/07/the-error-model/)
+  - asynchrony built in
 
 - Needs: the nonfunctional requirements
 
